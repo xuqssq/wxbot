@@ -277,7 +277,7 @@ router.get("/api/wx_openid", async ctx => {
 const app = new Koa()
 app.use(logger()).use(bodyParser()).use(router.routes()).use(router.allowedMethods())
 
-const port = process.env.PORT || 80
+const port = 80
 async function bootstrap() {
   await initDB()
 
